@@ -10,7 +10,6 @@ class LoginPage extends StatelessWidget {
             elevation: 0.0,
             iconTheme: new IconThemeData(color: Color(0xFF19D191))),
         body: Container(
-          width: double.infinity,
           child: new Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
@@ -49,7 +48,7 @@ class LoginPage extends StatelessWidget {
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.only(
-                          left: 20.0, right: 5.0, top: 15.0),
+                          left: 20.0, right: 5.0, top: 10.0),
                       child: new Container(
                         alignment: Alignment.center,
                         height: 60.0,
@@ -67,7 +66,7 @@ class LoginPage extends StatelessWidget {
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.only(
-                          left: 10.0, right: 20.0, top: 2.0),
+                          left: 10.0, right: 20.0, top: 10.0),
                       child: new Container(
                         alignment: Alignment.center,
                         height: 60.0,
@@ -81,6 +80,23 @@ class LoginPage extends StatelessWidget {
                   )
                 ],
               ),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 18.0),
+                      child: new Text(
+                        "Create A New Account",
+                        style: new TextStyle(
+                            fontSize: 17.0,
+                            color: Color(0xFF18D191),
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ));
